@@ -64,6 +64,7 @@ function buildCharts(sample) {
     // Get the otu_ids and sample_values
     let selected_otu_ids = selectedSample.otu_ids
     let selected_sample_values = selectedSample.sample_values
+    let selected_otu_labels = selectedSample.otu_labels
 
     // Build a Bubble Chart, i.e., scatter plot with option `mode: 'markers'`
     let trace_bubble = {
@@ -75,7 +76,9 @@ function buildCharts(sample) {
         color: selected_otu_ids,
         colorscale: "rainbow",
         showscale: true
-      }
+      },
+      text: selected_otu_labels,
+      hoverinfo: "text"
     };
 
     let data_bubble = [trace_bubble];
@@ -110,7 +113,9 @@ function buildCharts(sample) {
       y: top_otus,
       x: top_sample_values,
       type: "bar",
-      orientation: 'h'
+      orientation: 'h',
+      text: selected_otu_labels,
+      hoverinfo: "text"
     };
 
     let data_bar = [trace_bar];
