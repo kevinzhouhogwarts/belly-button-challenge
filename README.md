@@ -1,7 +1,9 @@
 # Belly Button Bacteria Visualization
 
 ## Overview
-This project uses D3 and Plotly to visualize the bacterial diversity of a dataset of several dozen samples of belly buttons.
+This project uses D3 and Plotly to visualize the bacterial diversity of a dataset of several dozen samples of belly buttons. Then, the interactive dashboard is presented using GitHub Pages.
+
+GitHub Pages: https://kevinzhouhogwarts.github.io/belly-button-challenge/
 
 ## Method
 First, separate, individual functions to generate the panel displaying the test subject's metadata and the pair of charts were defined. This was made slightly easier because the HTML design of the display page had already been prepared, so the div id's were known.
